@@ -11,9 +11,15 @@
     background-color:transparent;
     color: white;
     justify-content: space-between;
-    margin-top: 15px;
     padding: 3%;
-    min-height: 100%;
+
+
+    border-top: 1px ;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
 }
 
 .rodape h3{
