@@ -1,19 +1,19 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body{
     font-family: 'montseratt', sans-serif;
-   
+    color: white;
+    min-height: 100%;
     
     
 }
 
 .select_city{
     margin: auto;
-    padding: 10%;
+    padding: 5%;
 }
 
 .local{

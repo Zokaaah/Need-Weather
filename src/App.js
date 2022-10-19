@@ -76,7 +76,6 @@ function App() {
  
   return (
     <div className="App">
-      <main>
         {(typeof weather.main != "undefined") ?(
                   <div className={styles.local_container}>
                 <div className={styles.local}>{weather.name}, {weather.sys.country}</div>
@@ -115,7 +114,6 @@ function App() {
             </div>
             ):('')}
 
-        </main>
     </div>
   );
 }
