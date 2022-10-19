@@ -10,6 +10,8 @@ import weather_icon from "./images/weather.png"
 
 import React, {useState} from 'react'
 import styles from '../src/Styles/index.module.css'
+import Alert from "./components/Alert"
+import Footer from "./components/Footer"
 
 const api = {
   key: "fd1e121652c7ab46db85dd2da4181d31",
@@ -28,9 +30,20 @@ function App() {
         .then(result => {
           setWeather(result);
           setQuery('');
+
+
+
+          if (result.cod === 404){
+           return (<div><Alert/></div>
+           )
+
+          }
+         
           console.log(result);
         });
     }
+
+   
   }
   function climate (){
     const rainDay = weather.weather[0].main
@@ -116,6 +129,8 @@ function App() {
             </div>
             ):('')}
 
+
+              <Footer/>
     </div>
   );
 }
