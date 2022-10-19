@@ -82,7 +82,11 @@ function App() {
                 <div className={styles.local}>{weather.name}, {weather.sys.country}</div>
                 {/* <div className={styles.data}>{date}</div> */}
             </div>
-):(<div className={styles.select_city}><h1>Selecione a cidade</h1></div>)}
+):(<div className={styles.select_city}>
+  <h1>Selecione a cidade</h1>
+  <br />
+  <h1>Need Weather</h1>
+  </div>)}
 
             <div className={styles.search_box}>
                 <input type="text"
