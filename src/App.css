@@ -19,17 +19,6 @@ body{
 }
 
 
-@media only screen and (max-width: 768px) {
-  body{
-    background-image: url("./images/bkg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100%;
-    background-attachment: fixed;
-
-
-  }
-}
 
 }
 .App {

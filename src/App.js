@@ -5,6 +5,7 @@ import sunny from "./images/sunny.png"
 import rainy from "./images/rainy.png"
 import mist from "./images/misty.png"
 import tempe from "./images/max.png"
+import weather_icon from "./images/weather.png"
 
 
 import React, {useState} from 'react'
@@ -82,9 +83,10 @@ function App() {
                 {/* <div className={styles.data}>{date}</div> */}
             </div>
 ):(<div className={styles.select_city}>
-  <h1>Selecione a cidade</h1>
-  <br />
-  <h1>Need Weather</h1>
+  <div className={styles.select_container}>
+    <h1>Need <span className={styles.select_color}>Weather</span></h1>
+    <img  className={styles.icons_select} src={weather_icon} alt="" />
+  </div>
   </div>)}
 
             <div className={styles.search_box}>
