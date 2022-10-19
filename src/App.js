@@ -4,6 +4,8 @@ import clouds from "./images/clouds.png"
 import sunny from "./images/sunny.png"
 import rainy from "./images/rainy.png"
 
+import tempe from "./images/max.png"
+
 
 import React, {useState} from 'react'
 import styles from '../src/Styles/index.module.css'
@@ -88,8 +90,9 @@ function App() {
 
             <div className={styles.Weather_container}>
                 <div className={styles.temp}>{Math.round(weather.main.temp)}{"°C"}
-                  <p className={styles.temp_max}>Temp Max {weather.main.temp_max}</p>
-                  <p className={styles.temp_min}>Temp Min {weather.main.temp_min}</p>
+                  <img className={styles.tempe} src={tempe} alt="" />
+                  <p className={styles.temp_max}> Max {weather.main.temp_max}</p>
+                  <p className={styles.temp_min}> Min {weather.main.temp_min}</p>
 
                 </div>
                 <div className={styles.weather}>{climate()}</div>
