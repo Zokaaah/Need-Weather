@@ -3,7 +3,7 @@ import bkg from "./images/bkg.jpg"
 import clouds from "./images/clouds.png"
 import sunny from "./images/sunny.png"
 import rainy from "./images/rainy.png"
-
+import mist from "./images/misty.png"
 import tempe from "./images/max.png"
 
 
@@ -35,6 +35,8 @@ function App() {
     const rainDay = weather.weather[0].main
     const sunnyDay = weather.weather[0].main
     const cloudDay = weather.weather[0].main
+    const mistDay = weather.weather[0].main
+
 
     if (cloudDay === "Clouds"){
       console.log("Nublado")
@@ -46,6 +48,15 @@ function App() {
       return <div>
         <img className={styles.icons} src={sunny} alt="" />
         <p>Limpo</p>
+
+      </div>
+
+    }
+
+    else if(mistDay === "Mist"){
+      return <div>
+        <img className={styles.icons} src={mist} alt="" />
+        <p>Névoa</p>
 
       </div>
 
