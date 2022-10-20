@@ -19,6 +19,8 @@ const api = {
   baseURL: "https://api.openweathermap.org/data/2.5/",
 };
 
+
+
 function App() {
   const [query, setQuery] = useState("");
   const [weather, setWeather] = useState({});
@@ -42,11 +44,10 @@ function App() {
 
         const flag = FindFlag(result.sys.country);
         setFlagImage(flag);
-        console.log(result);
       });
     // }
   };
-  const DebouncedChange = useDebounce(search, 500);
+  const DebouncedChange = useDebounce(search, 1000);
 
   function climate() {
     const rainDay = weather.weather[0].main;

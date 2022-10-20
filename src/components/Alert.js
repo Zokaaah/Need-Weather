@@ -1,20 +1,17 @@
-import * as React from "react";
-import Alert from "@mui/material/Alert";
-import AlertTitle from "@mui/material/AlertTitle";
-import Stack from "@mui/material/Stack";
-
+import React from 'react'
 import styles from "./alert.module.css"
+import alertIcon from "../images/alert.png"
 
-export default function DescriptionAlerts() {
+
+const Alert = () => {
   return (
-
     <div className={styles.alertContainer}>
-    <Stack sx={{ width: "50%" }} spacing={2}>
-      <Alert severity="warning">
-        <AlertTitle>Cidade não encontrada</AlertTitle>
-        Verifique a ortografia<strong> e tente novamente</strong>
-      </Alert>
-    </Stack>
+
+      <img className={styles.alertIcon} src={alertIcon} alt="" />
+      <h5 className={styles.alertText}>Cidade não encontrada, verifique a ortografia e <strong>tente novamente</strong></h5>
+
     </div>
-  );
+    )
 }
+
+export default Alert
